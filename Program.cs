@@ -56,6 +56,32 @@ namespace HelloWord{
                 Console.WriteLine(myString[1]); // "e"
                 Console.WriteLine(myString.IndexOf("e")); // 1
                 Console.WriteLine(myString.Substring(7)); // Word
+            
+            // Foreach Loop
+                string[] dataAnime = {"naruto","dragon ball","bleach"};
+                foreach(string anime in dataAnime){
+                    Console.WriteLine(anime);
+                }
+            
+            // Arrays
+                string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+                int lengthArray = cars.Length;
+                Array.Sort(cars); // diurutkan sesuai abjad
+
+                int[] myNumbers = {5, 1, 8, 9};
+                Console.WriteLine(myNumbers.Max());  // diurutkan ke paling besar
+                Console.WriteLine(myNumbers.Min());  // diurutkan ke paling kecil
+                Console.WriteLine(myNumbers.Sum());  // dijumlahkan
+            
+            // Multidimensional Arrays
+                int[,] numbers = { {1, 4, 2}, {3, 6, 8} }; // [,] 2 dimensi jika ingin 3 maka [,,]
+                Console.WriteLine(numbers[0, 2]);  // Outputs 2
+
+                foreach (int i in numbers){
+                    Console.WriteLine(i);
+                }
+
+            
         }
     }
 }
