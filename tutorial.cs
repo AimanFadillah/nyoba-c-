@@ -19,7 +19,7 @@ namespace Tutorial{
             color = carColor;
         }
 
-        override public void Honk(){
+        public override void Honk(){
             Console.WriteLine("Minggir");
         }
 
@@ -50,5 +50,28 @@ namespace Tutorial{
         {
             return "mas";
         }
+    }
+
+    interface Human { // seluruh isi dari class ini adalah abstract
+        string Name();
+        string Birth();
+    }
+
+    class Budi : Human{
+        public string Name () {
+            return "budi";
+        }
+
+        public string Birth () {
+            return "20-1-2003";
+        }
+    }
+
+    enum Levels { // class yang isi nya number yang tidak bisa dirubah
+        Low, // 0
+        Medium, // 1
+        Hard, // 2
+        Extreme = 5, // 5
+        Baby, // 6
     }
 }
